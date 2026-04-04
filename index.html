@@ -1,18 +1,21 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Really cool thing!</title>
-    <link rel="stylesheet" href="main.css" />
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Answer Book</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
-    <div id="background">
-      <div class="gloss">
-        <p id="time">00:00:00</p>
-        <p id="weather">0% 0°F 0 MPH</p>
-      </div>
-    </div>
+  <h1>The Answer Book</h1>
+  <p>Ask your question, then receive your answer.</p>
 
-    <script src="script.js" defer></script>
-  </body>
+  <input type="text" id="questionInput" placeholder="Type your question here..." />
+
+  <button id="submitBtn">Ask the Book</button>
+
+  <div id="answerBox"></div>
+
+  <script src="script.js"></script>
+</body>
 </html>
