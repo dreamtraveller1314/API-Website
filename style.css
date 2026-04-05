@@ -1,78 +1,65 @@
-#background {
-  width: 100vw;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  text-align: right;
-  display: flow-root;
+body {
+  font-family: Parisienne, cursive;
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+  background: #fdf6e3;
+  color: #333;
 }
 
-html,
-body,
-p {
-  margin: 0;
-  padding: 0;
+h1 {
+  font-family: Lora, serif;
+  font-size: 2.5rem;
+  margin-bottom: 3px;
+}
+
+h2 {
+  font-family: Parisienne, cursive;
+  font-size: 2.5rem;
+  margin-bottom: 3px;
+}
+
+h3 {
+  font-family: Lora, serif;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
 }
 
 p {
+  font-family: Parisienne, cursive;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 24px;
+}
+
+button {
+  display: block;
+  margin: 12px auto;
+  padding: 12px 32px;
+  font-size: 1rem;
+  background: #8b4513;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-#time {
-  font-size: 15vh;
-  margin: 1vw;
+button:hover {
+  background: #a0522d;
 }
 
-.gloss {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  display: inline-block;
-  margin: 5vw;
-}#background {
-  width: 100vw;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  text-align: right;
-  display: flow-root;
-}
-
-html,
-body,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
-#time {
-  font-size: 15vh;
-  margin: 1vw;
-}
-
-.gloss {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  display: inline-block;
-  margin: 5vw;
-}
-
-#weather {
-  font-size: 5vh;
-  margin: 1vw;
+#answerBox {
+  margin-top: 32px;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #5a3e1b;
+  min-height: 40px;
 }
