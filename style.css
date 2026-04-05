@@ -7,16 +7,30 @@ body {
   color: #333;
 }
 
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+
 h1 {
   font-family: Lora, serif;
   font-size: 2.5rem;
   margin-bottom: 3px;
+  color: #432e13;
 }
 
 h2 {
   font-family: Parisienne, cursive;
   font-size: 2.5rem;
   margin-bottom: 3px;
+  color: #432e13;
 }
 
 h3 {
