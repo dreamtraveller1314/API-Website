@@ -12,7 +12,7 @@ btn.addEventListener("click", async function () {
   }
 
   answerBox.textContent = "Consulting the book...";
-  explanationBox.textContent = "";
+  explanationText.textContent = "";
   explanationBox.classList.remove("visible");
   btn.disabled = true;
 
