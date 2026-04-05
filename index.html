@@ -10,7 +10,10 @@
 </head>
 <body>
 
-  <h2>The<br></h2><h1>BOOK<br></h1><h2>of<br></h2><h1>ANSWER</h1>
+  <h2>The<br></h2>
+  <h1>BOOK<br></h1>
+  <h2>of<br></h2>
+  <h1>ANSWER</h1>
   <p>Ask your question, then receive your answer.</p>
 
   <input type="text" id="questionInput" placeholder="Type your question here..." />
@@ -19,9 +22,10 @@
 
   <h3>Your Answer:</h3>
   <div id="answerBox"></div>
-    <h3>AI Explanation</h3>
-    <div id="explanationBox"></div>
-  </section>
+  <div id="explanationBox">
+    <span class="explanation-label">✦ AI Explanation</span>
+    <span id="explanationText"></span>
+  </div>
 
   <script src="script.js"></script>
 </body>

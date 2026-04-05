@@ -58,8 +58,53 @@ button:hover {
 
 #answerBox {
   margin-top: 32px;
-  font-size: 1.4rem;
-  font-style: italic;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.6rem;
   color: #5a3e1b;
   min-height: 40px;
+  letter-spacing: 0.03em;
+}
+
+#answerBox .letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: letterIn 0.4s ease forwards;
+}
+
+@keyframes letterIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#explanationBox {
+  margin-top: 24px;
+  text-align: left;
+  background: #eee2ca;
+  border-radius: 16px;
+  padding: 20px 24px;
+  font-family: Lora, serif;
+  font-size: 1rem;
+  color: #4a1a2a;
+  line-height: 1.7;
+  border: 1.5px dashed #d3bb8c;
+  box-shadow: 0 2px 12px rgba(200, 80, 120, 0.08);
+  min-height: 48px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+#explanationBox.visible {
+  opacity: 1;
+}
+
+.explanation-label {
+  font-family: Lora, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #b8a47b;
+  margin-bottom: 6px;
+  display: block;
 }
