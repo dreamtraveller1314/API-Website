@@ -22,7 +22,7 @@ btn.addEventListener("click", async function () {
     const answer = abData.answer;
     animateAnswer(answer);
     const prompt = `You are a friendly Answer Book Analyst. 
-    I am asking the question ${question} and the answer from the answer book will be ${answer}. 
+    I am asking the question “${question}” and the answer from the answer book will be “${answer}”. 
     Please analyze the question and answer, and generate a reasonable explanation on what answer book trying to say.`;
 
     const response = await fetch("https://api-website-production-1f3b.up.railway.app/explain", {
